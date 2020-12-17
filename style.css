@@ -176,9 +176,21 @@ p {
   width: 95%;
   border: solid rgb(211, 211, 211) 0.5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  cursor: pointer;
+  /*flex-direction: column;*/
 }
-
+.activityDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.button {
+  width: 50px;
+}
+.selector {
+  width: 70px;
+}
 .hour {
   height: 100%;
   /* font-size: 10px; */
@@ -187,9 +199,31 @@ p {
   justify-content: left;
   align-items: center;
   padding-left: 3px;
+  width: 100%;
 }
 .hour:hover {
   background-color: green;
   color: white;
 }
 
+#button {
+  background-color: rgb(3, 44, 7);
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#button :hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.removeInput {
+  color: black;
+  font-size: 20px;
+  padding-right: 0.5px;
+  padding-top: 3px;
+}
+.removeInput:hover {
+  font-size: x-large;
+}
